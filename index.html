@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Alura Challenge - Oracle ONE Encriptador de Texto</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Montserrat:wght@300&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <section id="logo-alura">
+        <img src="img/logo.png" alt="Logo">
+    </section>
+</header>
+
+<main>
+    <section id="seccion-texto-introducido">
+        <label for="area-texto-introducido"></label>
+        <textarea id="area-texto-introducido" placeholder="Ingrese el texto aquí"></textarea>
+    </section>
+
+    <section id="seccion-contrato-texto-introducido">
+        <img src="img/signo-exclamacion.png" alt="!" id="circulo-exclamacion">
+        <p id="contrato-texto-introducido">Sólo letras minúsculas y sin acentos</p>
+    </section>
+
+    <section id="seccion-botones-en-desencriptar">
+        <button id="boton-encriptar" class="boton">Encriptar</button>
+        <button id="boton-desencriptar" class="boton">Desencriptar</button>
+    </section>
+
+    <section id="seccion-texto-resultado">
+        <div id="contenedor-munieco">
+            <img src="img/munieco.png" alt="Muñeco" id="munieco">
+
+            <div id="contenedor-mensaje-no-encontrado">
+                <p id="mensaje-no-encontrado">Ningún mensaje fue encontrado</p>
+                <p id="ingrese-un-texto">Ingrese el texto a encriptar o desencriptar</p>
+            </div>
+        </div>
+
+        <div id="contenedor-texto-resultado" class="ocultar">
+            <div id="contenedor-texto-desencriptado">
+                <label for="area-texto-resultado"></label>
+                <textarea id="area-texto-resultado" readonly></textarea>
+            </div>
+            <div id="contenedor-boton-copiar">
+                <button id="boton-copiar-texto" class="boton">Copiar</button>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <section id="seccion-copyright">
+        <h2>
+            &copy; 2022 - Juan Elías Ribeiro
+        </h2>
+    </section>
+</footer>
+
+<script src="js/variables-de-elementos-html.js"></script>
+<script src="js/funcion-encriptar.js"></script>
+<script src="js/funcion-desencriptar.js"></script>
+<script src="js/funcion-copiar-texto.js"></script>
+</body>
+</html>
